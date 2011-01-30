@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  facebook_id: 1
+  userguid: MyString
+  email: MyString
+  event_key: MyString
+  date_removed: 2011-01-21 18:53:23
+
+two:
+  facebook_id: 1
+  userguid: MyString
+  email: MyString
+  event_key: MyString
+  date_removed: 2011-01-21 18:53:23

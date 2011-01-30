@@ -1,0 +1,24 @@
+<h1>Hotties#index</h1>
+<p>Find me in app/views/hotties/index.html.erb</p>
+<p>The guid is <%= @guid %></p>
+<p>Minimum birthday: <%= @myage %></p>
+<p>Size: <%= @hotties.size %>
+<div>Name is: <%= @u12345.try(:facebook_profile).try(:first_name) %></div>
+<% @users.each do |hottie| %>
+<div>
+  <span><%=h hottie.email %></span>
+  <span style="padding:0 10px;"><%=h hottie.facebook_id %></span>
+  <span style="padding:0 10px;"><%=h hottie.facebook_profile.first_name %></span>
+</div>
+<% end %>
+<h1>This needs some more viewing</h1>
+
+<% @profiles.each do |p| %>
+<div>
+  <span><%=h p.sex %></span>
+  <span style="padding:0 10px;"><%=h p.user.userguid %></span>
+  <span style="padding:0 10px;"><%=h p.user.facebook_profile.first_name %></span>
+  <span style="padding:0 10px;"><%=h p.user.facebook_profile.last_name %></span>
+</div>
+<% end %>
+

@@ -1,0 +1,2 @@
+module HottiesHelper
+end
