@@ -59,7 +59,7 @@ class ConnectionsController < ApplicationController
 
     def unlike
       if (params[:id].blank? || params[:guid].blank?)
-        render :json => {:error => 'Missing parameter: required guids'}, :callback => params[:callback], :status => :unprocessable_entity
+        render :json => {:error => 'Missing parameter: required guids for both the liked and liker'}, :callback => params[:callback], :status => :unprocessable_entity
         return
       end
       u = User.find_by_userguid(params[:guid])
